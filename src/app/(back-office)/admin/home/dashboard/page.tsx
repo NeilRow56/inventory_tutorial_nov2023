@@ -1,5 +1,13 @@
+import DashboardBanner from '@/components/dashboard/DashboardBanner'
+import SalesActivity from '@/components/dashboard/SalesActivity'
+
 const Dashboard = () => {
-  return <div>Dashboard</div>
+  return (
+    <>
+      <DashboardBanner />
+      <SalesActivity />
+    </>
+  )
 }
 
 export default Dashboard
