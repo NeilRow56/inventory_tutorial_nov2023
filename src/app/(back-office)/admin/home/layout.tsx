@@ -1,5 +1,4 @@
-import Navbar from '@/components/dashboard/Navbar'
-import Sidebar from '@/components/sidebar/Sidebar'
+import HomeNavBar from '@/components/nav/HomeNavBar'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
@@ -14,9 +13,8 @@ export default function AdminLayout({
 }) {
   return (
     <div className="flex">
-      <Sidebar />
-      <main className="ml-60 min-h-screen w-full bg-slate-50 text-slate-900">
-        <Navbar />
+      <main className=" min-h-screen w-full bg-slate-50 text-slate-900">
+        <HomeNavBar />
         {children}
       </main>
     </div>
