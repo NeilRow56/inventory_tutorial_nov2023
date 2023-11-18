@@ -27,7 +27,7 @@ export const CollapsibleRoutes = () => {
   const routes = inventoryLinks
 
   return (
-    <div className="flex w-full flex-col gap-4 py-6">
+    <div className="flex w-full flex-col gap-2 py-2">
       {routes.map((route) => (
         <CollapsibleItem
           key={route.href}

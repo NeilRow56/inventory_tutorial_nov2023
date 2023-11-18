@@ -76,7 +76,7 @@ const teacherRoutes = [
 export const SidebarRoutes = () => {
   const pathname = usePathname()
 
-  const isTeacherPage = pathname?.includes('/teacher')
+  const isTeacherPage = pathname?.includes('/admin/teacher')
 
   const routes = isTeacherPage ? teacherRoutes : guestRoutes
 
