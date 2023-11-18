@@ -9,6 +9,7 @@ import { cn } from '@/lib/utils'
 import { BaggageClaim, PlusCircle } from 'lucide-react'
 import Link from 'next/link'
 import { usePathname, useRouter } from 'next/navigation'
+import { CollapsibleRoutes } from './collapsibleLinks/CollapisibleRoutes'
 
 const SidebarCollapsibleItem = () => {
   const inventoryLinks = [
@@ -70,7 +71,7 @@ const SidebarCollapsibleItem = () => {
           </Link>
         </CollapsibleContent>
         <CollapsibleContent className="mt-1 ">
-          {inventoryLinks.map((item, index) => {
+          {/* {inventoryLinks.map((item, index) => {
             return (
               <Link key={index} href={item.href}>
                 <div className="flex w-full items-center gap-x-2 py-2">
@@ -98,7 +99,8 @@ const SidebarCollapsibleItem = () => {
                 />
               </Link>
             )
-          })}
+          })} */}
+          <CollapsibleRoutes />
         </CollapsibleContent>
       </Collapsible>
     </div>
