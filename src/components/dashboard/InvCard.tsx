@@ -8,24 +8,32 @@ const inventoryRoutes = [
     title: 'Item groups',
     description: 'Create multiple variants of the same item using item Groups',
     label: 'New Item Group',
+    href: '/admin/inventory/item-groups',
+    disabled: false,
   },
   {
     image: '/vercelImage.svg',
     title: 'Items',
     description: 'Create stanalone items and services that you buy and sell',
-    label: 'New Item',
+    label: 'New Item ',
+    href: '/admin/inventory/items/new',
+    disabled: false,
   },
   {
     image: '/vercelImage.svg',
     title: 'Composite Items',
     description: 'Create multiple variants of the same item using item Groups',
     label: 'Composite',
+    href: '/admin/inventory/adjustments',
+    disabled: true,
   },
   {
     image: '/vercelImage.svg',
     title: 'Price Lists',
     description: 'Create multiple variants of the same item using item Groups',
     label: 'Price',
+    href: '/admin/inventory/adjustments',
+    disabled: false,
   },
 ]
 
@@ -39,6 +47,8 @@ export const InvCard = () => {
           label={item.label}
           title={item.title}
           description={item.description}
+          href={item.href}
+          disabled={item.disabled}
         />
       ))}
     </div>

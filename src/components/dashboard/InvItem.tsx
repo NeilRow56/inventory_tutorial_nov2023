@@ -2,13 +2,15 @@
 
 import Image from 'next/image'
 import { useRouter } from 'next/navigation'
-import { Button } from '../ui/button'
+import Link from 'next/link'
 
 interface InvItemProps {
   image: string
   label: string
   title: string
   description: string
+  href: string
+  disabled?: boolean
 }
 
 const InvItem: React.FC<InvItemProps> = ({
@@ -16,6 +18,8 @@ const InvItem: React.FC<InvItemProps> = ({
   label,
   title,
   description,
+  href,
+  disabled,
 }) => {
   const router = useRouter()
 
@@ -52,11 +56,21 @@ const InvItem: React.FC<InvItemProps> = ({
         <div className="aspect-rectangle mx-auto mb-10 block  overflow-hidden">
           <Image src={image} width={300} height={200} alt="" />
         </div>
-        <div>
-          <p className="line-clamp-1">{description}</p>
-        </div>
-        <div className="mt-10 w-[150px]">
-          <Button className="bg-blue-600 text-white ">{label}</Button>
+
+        <p className="line-clamp-1">{description}</p>
+        <div className=" mt-10 flex flex-col items-center justify-center">
+          {disabled ? (
+            <button className="inline-flex  items-center rounded-md bg-blue-600 px-3 py-1 text-slate-50 hover:bg-blue-400">
+              Enable
+            </button>
+          ) : (
+            <Link
+              href={href}
+              className="mb-2 inline-flex items-center rounded-md bg-blue-600 px-3 py-1 text-slate-50 hover:bg-blue-400 "
+            >
+              <span className="px-2 ">{label}</span>
+            </Link>
+          )}
         </div>
       </div>
     </div>

@@ -4,7 +4,7 @@ import { InvCard } from '@/components/dashboard/InvCard'
 const Inventory = () => {
   return (
     <div>
-      <FixedHeader />
+      <FixedHeader newLink="/admin/inventory/items/new" />
       <div className="">
         <InvCard />
       </div>

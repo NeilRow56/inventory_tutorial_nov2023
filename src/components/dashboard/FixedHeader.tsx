@@ -14,13 +14,17 @@ import {
 } from '@/components/ui/tooltip'
 import Link from 'next/link'
 
-const FixedHeader = () => {
+interface NewLinkProps {
+  newLink: string
+}
+
+const FixedHeader: React.FC<NewLinkProps> = ({ newLink }) => {
   return (
     <div className="flex items-center justify-between bg-white px-4 py-5">
       <div className=" flex  w-full flex-row items-center gap-2">
         <button className="flex gap-2 text-2xl">
           All Items
-          <ChevronDown className=" mt-2 h-4 w-4 text-slate-900" />
+          <ChevronDown className=" mt-2 h-4 w-4 text-blue-600" />
         </button>
       </div>
       <div className="flex gap-4">
@@ -29,7 +33,7 @@ const FixedHeader = () => {
           <Tooltip>
             <TooltipTrigger asChild>
               <Link
-                href="#"
+                href={newLink}
                 className="flex items-center rounded-md bg-blue-600 px-3 py-1 text-slate-50 hover:bg-blue-400 "
               >
                 <Plus className=" h-4 w-4  text-slate-50" />
@@ -37,7 +41,7 @@ const FixedHeader = () => {
               </Link>
             </TooltipTrigger>
             <TooltipContent>
-              <p>Add users</p>
+              <p>Add item</p>
             </TooltipContent>
           </Tooltip>
         </TooltipProvider>

@@ -1,29 +1,26 @@
 'use client'
 
-import { PlusCircle } from 'lucide-react'
+import { BaggageClaim } from 'lucide-react'
 
-import { usePathname } from 'next/navigation'
 import { CollapsibleItem } from './CollapsibleItem'
 
 const inventoryLinks = [
-  { label: 'Items', href: '/admin/inventory/items', icon: PlusCircle },
+  { label: 'Items', href: '/admin/inventory/items', icon: BaggageClaim },
 
   {
     label: 'Item Groups',
     href: '/admin/inventory/item-groups',
-    icon: PlusCircle,
+    icon: BaggageClaim,
   },
 
   {
     label: 'Adjustments',
     href: '/admin/inventory/adjustments',
-    icon: PlusCircle,
+    icon: BaggageClaim,
   },
 ]
 
 export const CollapsibleRoutes = () => {
-  const pathname = usePathname()
-
   const routes = inventoryLinks
 
   return (
