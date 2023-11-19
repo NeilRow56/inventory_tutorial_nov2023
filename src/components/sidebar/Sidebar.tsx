@@ -3,6 +3,7 @@ import { SidebarRoutes } from './SidebarRoutes'
 import SubscriptionCard from './SubscriptionCard'
 
 import SidebarCollapsibleItem from './SidebarCollapsibleItem'
+import SidebarSalesCollapsibleItem from './SidebarSalesCollapsibleItem'
 
 const Sidebar = () => {
   return (
@@ -18,6 +19,7 @@ const Sidebar = () => {
         {/* Links */}
 
         <SidebarCollapsibleItem />
+        <SidebarSalesCollapsibleItem />
         <SidebarRoutes />
       </div>
 
