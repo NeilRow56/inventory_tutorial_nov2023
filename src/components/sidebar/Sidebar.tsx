@@ -1,9 +1,7 @@
 import { BaggageClaim, ChevronLeft } from 'lucide-react'
 import { SidebarRoutes } from './SidebarRoutes'
-import SubscriptionCard from './SubscriptionCard'
-
 import SidebarCollapsibleItem from './SidebarCollapsibleItem'
-import SidebarSalesCollapsibleItem from './SidebarSalesCollapsibleItem'
+import SubscriptionCard from './SubscriptionCard'
 
 const Sidebar = () => {
   return (
@@ -17,9 +15,7 @@ const Sidebar = () => {
           <span className="text-bold text-xl">Inventory</span>
         </div>
         {/* Links */}
-
         <SidebarCollapsibleItem />
-        <SidebarSalesCollapsibleItem />
         <SidebarRoutes />
       </div>
 

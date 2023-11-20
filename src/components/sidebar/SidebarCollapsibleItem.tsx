@@ -9,7 +9,7 @@ import { cn } from '@/lib/utils'
 import { PlusCircle } from 'lucide-react'
 import Link from 'next/link'
 import { usePathname, useRouter } from 'next/navigation'
-import { CollapsibleRoutes } from './collapsibleLinks/CollapisibleRoutes'
+import { CollapsibleRoutes } from './collapsibleLinks/CollapsibleRoutes'
 
 const SidebarCollapsibleItem = () => {
   const pathname = usePathname()
