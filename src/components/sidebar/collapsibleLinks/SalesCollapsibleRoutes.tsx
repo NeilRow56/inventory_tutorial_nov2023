@@ -1,46 +1,31 @@
 'use client'
 
-import { BaggageClaim } from 'lucide-react'
+import { BaggageClaim, ShoppingBag } from 'lucide-react'
 
 import { CollapsibleItem } from './CollapsibleItem'
 
-const inventoryLinks = [
-  { label: 'Items', href: '/admin/inventory/items', icon: BaggageClaim },
-
-  {
-    label: 'Item Groups',
-    href: '/admin/inventory/item-groups',
-    icon: BaggageClaim,
-  },
-
-  {
-    label: 'Adjustments',
-    href: '/admin/inventory/adjustments',
-    icon: BaggageClaim,
-  },
-]
 const salesLinks = [
   {
     label: 'Sales Analysis',
     href: '/admin/sales/sales-analysis',
-    icon: BaggageClaim,
+    icon: ShoppingBag,
   },
 
   {
     label: 'Sales Groups',
     href: '/admin/sales/sales-groups',
-    icon: BaggageClaim,
+    icon: ShoppingBag,
   },
 
   {
     label: 'Adjustments',
     href: '/admin/sales/adjustments',
-    icon: BaggageClaim,
+    icon: ShoppingBag,
   },
 ]
 
-export const CollapsibleRoutes = () => {
-  const routes = inventoryLinks
+export const SalesCollapsibleRoutes = () => {
+  const routes = salesLinks
 
   return (
     <div className="flex w-full flex-col gap-2 py-2">

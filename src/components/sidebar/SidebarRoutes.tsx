@@ -28,16 +28,7 @@ const guestRoutes = [
     label: 'Home',
     href: '/admin/home',
   },
-  // {
-  //   icon: BaggageClaim,
-  //   label: 'Inventory',
-  //   href: '/admin/inventory',
-  // },
-  {
-    icon: ShoppingCart,
-    label: 'Sales',
-    href: '/admin/sales',
-  },
+
   {
     icon: ShoppingBag,
     label: 'Purchases',

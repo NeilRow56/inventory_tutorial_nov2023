@@ -1,9 +1,8 @@
-'use client'
-
 import { BaggageClaim, ChevronLeft } from 'lucide-react'
 import { SidebarRoutes } from './SidebarRoutes'
 import SidebarCollapsibleItem from './SidebarCollapsibleItem'
 import SubscriptionCard from './SubscriptionCard'
+import SidebarSalesCollapsibleItem from './SidebarSalesCollapsibleItem'
 
 const Sidebar = () => {
   const inventoryLinks = [
@@ -29,10 +28,11 @@ const Sidebar = () => {
         {/* Logo */}
         <div className="flex items-center gap-3 bg-slate-950 p-2 ">
           <BaggageClaim />
-          <span className="text-bold text-xl">Inventory</span>
+          <span className="text-bold text-xl">Inventory Management</span>
         </div>
 
         <SidebarCollapsibleItem />
+        <SidebarSalesCollapsibleItem />
         <SidebarRoutes />
       </div>
 
