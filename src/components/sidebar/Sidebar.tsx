@@ -1,9 +1,26 @@
+'use client'
+
 import { BaggageClaim, ChevronLeft } from 'lucide-react'
 import { SidebarRoutes } from './SidebarRoutes'
 import SidebarCollapsibleItem from './SidebarCollapsibleItem'
 import SubscriptionCard from './SubscriptionCard'
 
 const Sidebar = () => {
+  const inventoryLinks = [
+    { label: 'Items', href: '/admin/inventory/items', icon: BaggageClaim },
+
+    {
+      label: 'Item Groups',
+      href: '/admin/inventory/item-groups',
+      icon: BaggageClaim,
+    },
+
+    {
+      label: 'Adjustments',
+      href: '/admin/inventory/adjustments',
+      icon: BaggageClaim,
+    },
+  ]
   return (
     <div className="fixed flex min-h-screen w-60 flex-col justify-between bg-slate-800 px-3 py-3 text-slate-50">
       {/* Top */}
@@ -14,7 +31,7 @@ const Sidebar = () => {
           <BaggageClaim />
           <span className="text-bold text-xl">Inventory</span>
         </div>
-        {/* Links */}
+
         <SidebarCollapsibleItem />
         <SidebarRoutes />
       </div>

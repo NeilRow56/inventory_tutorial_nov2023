@@ -10,11 +10,14 @@ import { PlusCircle } from 'lucide-react'
 import Link from 'next/link'
 import { usePathname, useRouter } from 'next/navigation'
 import { CollapsibleRoutes } from './collapsibleLinks/CollapsibleRoutes'
+import { title } from '@/components/sidebar/collapsibleLinks/CollapsibleRoutes'
 
 const SidebarCollapsibleItem = () => {
   const pathname = usePathname()
-  const href = pathname
-  const isActive = href
+
+  const href = '/admin/inventory'
+
+  const isActive = pathname === href
 
   return (
     <div>
@@ -29,7 +32,7 @@ const SidebarCollapsibleItem = () => {
               href="/admin/inventory"
               className={cn('text-slate-200 ', isActive && 'text-yellow-300')}
             >
-              Inventory
+              {title}
             </Link>
           </div>
         </CollapsibleTrigger>

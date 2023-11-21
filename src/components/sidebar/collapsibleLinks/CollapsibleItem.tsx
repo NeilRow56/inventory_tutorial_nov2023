@@ -1,7 +1,7 @@
 'use client'
 
 import { LucideIcon } from 'lucide-react'
-import { usePathname, useRouter } from 'next/navigation'
+import { usePathname } from 'next/navigation'
 
 import { cn } from '@/lib/utils'
 import Link from 'next/link'
@@ -10,6 +10,7 @@ interface CollapsibleItemProps {
   icon: LucideIcon
   label: string
   href: string
+  title: string
 }
 
 export const CollapsibleItem = ({
