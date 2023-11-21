@@ -20,11 +20,9 @@ const inventoryLinks = [
   },
 ]
 
-export const title = 'Inventory5' as string
-
 export const CollapsibleRoutes = () => {
   const routes = inventoryLinks
-  const title = 'Inventory' as string
+
   return (
     <div className="flex w-full flex-col gap-2 py-2">
       {routes.map((route) => (
@@ -33,7 +31,6 @@ export const CollapsibleRoutes = () => {
           icon={route.icon}
           label={route.label}
           href={route.href}
-          title={title}
         />
       ))}
     </div>

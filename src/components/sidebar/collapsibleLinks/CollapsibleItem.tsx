@@ -10,7 +10,6 @@ interface CollapsibleItemProps {
   icon: LucideIcon
   label: string
   href: string
-  title: string
 }
 
 export const CollapsibleItem = ({
