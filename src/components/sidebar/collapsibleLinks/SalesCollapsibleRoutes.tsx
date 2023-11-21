@@ -1,6 +1,6 @@
 'use client'
 
-import { BaggageClaim, ShoppingBag } from 'lucide-react'
+import { ShoppingBag } from 'lucide-react'
 
 import { CollapsibleItem } from './CollapsibleItem'
 

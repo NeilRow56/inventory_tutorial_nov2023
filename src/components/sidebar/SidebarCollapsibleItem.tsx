@@ -19,7 +19,7 @@ const SidebarCollapsibleItem = () => {
         <CollapsibleTrigger className="w-full ">
           <TriggerItem
             href={'/admin/inventory'}
-            title={'Inventory Summary'}
+            title={'Inventory'}
             icon={PlusCircle}
           />
         </CollapsibleTrigger>
