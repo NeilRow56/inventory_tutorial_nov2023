@@ -5,36 +5,30 @@ import { BaggageClaim } from 'lucide-react'
 import { CollapsibleItem } from './CollapsibleItem'
 
 const inventoryLinks = [
-  { label: 'Items', href: '/admin/inventory/items', icon: BaggageClaim },
-
-  {
-    label: 'Item Groups',
-    href: '/admin/inventory/item-groups',
-    icon: BaggageClaim,
-  },
-
   {
     label: 'Adjustments',
     href: '/admin/inventory/adjustments',
     icon: BaggageClaim,
   },
-]
-const salesLinks = [
   {
-    label: 'Sales Analysis',
-    href: '/admin/sales/sales-analysis',
+    label: 'Brands',
+    href: '/admin/inventory/brands',
     icon: BaggageClaim,
   },
-
   {
-    label: 'Sales Groups',
-    href: '/admin/sales/sales-groups',
+    label: 'Categories',
+    href: '/admin/inventory/categories',
     icon: BaggageClaim,
   },
-
+  { label: 'Items', href: '/admin/inventory/items', icon: BaggageClaim },
   {
-    label: 'Adjustments',
-    href: '/admin/sales/adjustments',
+    label: 'Units',
+    href: '/admin/inventory/units',
+    icon: BaggageClaim,
+  },
+  {
+    label: 'Warehouse',
+    href: '/admin/inventory/warehouse',
     icon: BaggageClaim,
   },
 ]
